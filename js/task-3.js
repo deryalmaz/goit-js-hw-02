@@ -1,9 +1,8 @@
-function checkForSpam(message){
-    let lowMessage = message.toLowerCase();
+function checkForSpam(message) {
+  let lowMessage = message.toLowerCase();
 
- return lowMessage.includes("spam") || lowMessage.includes("sale")
+  return lowMessage.includes("spam") || lowMessage.includes("sale");
 }
-
 
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
